@@ -21,3 +21,4 @@ This accepts POST request to ```/scrape``` URL with filters passed as JSON with 
   }
 }
 ```
+The output can be found in `yc_scrapdata.csv` file in project's root directory
