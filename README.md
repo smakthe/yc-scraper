@@ -1,24 +1,23 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is the web scraping API for  Y Combinator's publicly listed companies
 
-Things you may want to cover:
+This accepts POST request to ```/scrape``` URL with filters passed as JSON with the request body:
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```
+{
+  "n": 10,
+  "filters": {
+    "batch": "W21",
+    "industry": "Healthcare",
+    "region": "United States",
+    "tag": "Top Companies",
+    "company_size": "1-10",
+    "is_hiring": true,
+    "nonprofit": false,
+    "black_founded": true,
+    "hispanic_latino_founded": false,
+    "women_founded": true
+  }
+}
+```
